@@ -1,5 +1,5 @@
 Download the pretrained model checkpoint from the link below to this folder:
-https://drive.google.com/file/d/1kR5QuRAuooYcTNLMnMj80Z9IgSs8jtLO/view?usp=sharing
+https://drive.google.com/file/d/1tcXvzZdLja2ni7PjMpJgfLVryZ0J5WtR/view?usp=sharing
 
 The model checkpoint file name should be `UNETR_model_best_acc.pth`.
 
