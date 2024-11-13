@@ -6,6 +6,10 @@ from pycaret.regression import load_model
 # Specify the model file path
 MODEL_PATH = Path(__file__).absolute().parent / "best_model_weight_pounds.pkl"
 
+# Check if the file exists
+if not MODEL_PATH.exists():
+    raise FileNotFoundError(f"Model file not found at {MODEL_PATH}")
+
 # Load the model (load_model automatically appends the necessary suffix)
 model = load_model(MODEL_PATH.with_suffix(""))
 
