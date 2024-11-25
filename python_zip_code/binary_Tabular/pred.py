@@ -4,7 +4,7 @@ from pathlib import Path
 from pycaret.classification import load_model
 
 # Specify the model file path
-MODEL_PATH = Path(__file__).absolute().parent / "best_model_rank.pkl"
+MODEL_PATH = Path(__file__).absolute().parent / "best_model_with_tip.pkl"
 
 # Check if the file exists
 if not MODEL_PATH.exists():
