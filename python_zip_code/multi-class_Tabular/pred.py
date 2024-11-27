@@ -25,25 +25,10 @@ def predict(inputs: pd.DataFrame, return_proba: bool = False) -> pd.DataFrame:
     Returns:
         pd.DataFrame: Prediction results (labels or probabilities).
     """
-    # Ensure input is a DataFrame
-    if not isinstance(inputs, pd.DataFrame):
-        raise ValueError("Input data must be a pandas DataFrame.")
-
-    # Ensure all categorical columns are of type 'object'
-    categorical_columns = inputs.select_dtypes(include=['category', 'object']).columns
-    for col in categorical_columns:
-        inputs[col] = inputs[col].astype('object')
-
-    # Align input features with model's training features
-    model_features = model.feature_names_in_
-    for feature in model_features:
-        if feature not in inputs.columns:
-            inputs[feature] = 0
-    inputs_transformed = inputs[model_features]
 
     if return_proba:
         # Return probabilities for each class
-        probabilities = model.predict_proba(inputs_transformed)
+        probabilities = model.predict_proba(inputs)
         if not np.all((probabilities >= 0.0) & (probabilities <= 1.0)):
             raise ValueError("Model returned invalid probabilities. Please check the model.")
         # Convert to DataFrame with class names as columns
@@ -51,7 +36,8 @@ def predict(inputs: pd.DataFrame, return_proba: bool = False) -> pd.DataFrame:
         return probabilities_df
     else:
         # Predict class labels
-        labels = model.predict(inputs_transformed)
+        labels = model.predict(inputs)
         # Convert to DataFrame
         labels_df = pd.DataFrame(labels, columns=['Predicted_Label'])
         return labels_df
+    
