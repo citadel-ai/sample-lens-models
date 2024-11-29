@@ -51,32 +51,6 @@ pip install -r requirements.txt
 
 ---
 
-## Making Predictions with `pred.py`
-
-The `pred.py` script loads a pre-trained multi-label classification model and makes predictions on new data.
-
-### Usage
-
-To use the script programmatically:
-
-```python
-from pred import predict
-import pandas as pd
-
-# Example input data
-data = pd.read_csv("test_label_idx.csv")
-
-# Predict labels for each instance
-predicted_labels = predict(data)
-print("Predicted Labels:", predicted_labels)
-
-# Predict probabilities for each label
-predicted_probabilities = predict(data, return_proba=True)
-print("Predicted Probabilities:", predicted_probabilities)
-```
-
----
-
 ## Script Details
 
 ### How `pred.py` Works

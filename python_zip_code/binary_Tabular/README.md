@@ -49,33 +49,7 @@ pip install -r requirements.txt
 
 ---
 
-## Making Predictions with `pred.py`
-
-The `pred.py` script is designed to load a pre-trained binary classification model and use it to make predictions on new data.
-
----
-
-### Usage
-
-To use the script programmatically:
-
-```python
-from pred import predict
-import pandas as pd
-
-# Example input data
-data = pd.DataFrame("taxi_2020_test_converted_1000.csv")
-
-# Predict class labels
-predicted_labels = predict(data)
-print("Predicted Labels:", predicted_labels)
-
-# Predict probabilities for the positive class
-predicted_probabilities = predict(data, return_proba=True)
-print("Predicted Probabilities:", predicted_probabilities)
-```
-
----
+## Script Details
 
 ### How `pred.py` Works
 

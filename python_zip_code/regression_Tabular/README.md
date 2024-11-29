@@ -40,17 +40,7 @@ pip install -r requirements.txt
 6. **Export Model for Deployment**:
    - The last cell creates a ZIP file, `regression_model_package.zip`, which includes the model, `pred.py`, and `requirements.txt` for easy deployment.
 
-## Making Predictions with `pred.py`
-
-The `pred.py` script loads a pre-trained model and uses it to make predictions on new input data.
-
-### Usage
-
-The script can be used as follows:
-
-```bash
-python pred.py
-```
+## Script Details
 
 ### How `pred.py` Works
 
