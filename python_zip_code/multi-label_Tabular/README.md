@@ -1,6 +1,6 @@
 # Multi-Label Classification Model Package
 
-This repository provides a multi-label classification model trained using Scikit-learn. It includes scripts for data preparation, model training, and making predictions.
+This repository provides a multi-label classification model trained using Scikit-learn(1.5.2). It includes scripts for data preparation, model training, and making predictions.
 
 ---
 
