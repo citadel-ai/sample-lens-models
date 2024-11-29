@@ -13,7 +13,7 @@ if not MODEL_PATH.exists():
 # モデルの読み込み
 model = joblib.load(MODEL_PATH)
 
-def predict(inputs: pd.DataFrame) -> np.ndarray:
+def predict(inputs: pd.DataFrame) -> pd.DataFrame:
     """
     マルチラベル分類モデルで入力データに対して予測を行う関数。
     
@@ -21,7 +21,7 @@ def predict(inputs: pd.DataFrame) -> np.ndarray:
         inputs (pd.DataFrame): 予測に使用するデータ。
         
     Returns:
-        np.ndarray: 各ラベルの予測クラス。
+        pd.DataFrame: 各行の予測クラスを含むデータフレーム。
     """
     # 必要な前処理を行う
     inputs_preprocessed = model.named_steps['preprocessor'].transform(inputs)
@@ -29,4 +29,8 @@ def predict(inputs: pd.DataFrame) -> np.ndarray:
     # 予測を行う
     predictions = model.named_steps['classifier'].predict(inputs_preprocessed)
     
-    return predictions
+    # 結果をデータフレームに変換
+    predictions_df = pd.DataFrame(predictions, columns=[str(i) for i in range(predictions.shape[1])])
+    predictions_df.index = inputs.index
+    
+    return predictions_df
