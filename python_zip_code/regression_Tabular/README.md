@@ -17,7 +17,7 @@ pip install -r requirements.txt
 3. **best_model_weight_pounds.pkl** - The saved regression model.
 4. **pyCaret_test.ipynb** - Jupyter Notebook demonstrating model training using PyCaret.
 
-## Using the Jupyter Notebook (`pyCaret_test.ipynb`)
+## Using the Jupyter Notebook (`pyCaret_test_regression.ipynb`)
 
 ### Step-by-Step Guide
 
