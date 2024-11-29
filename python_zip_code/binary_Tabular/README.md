@@ -19,11 +19,11 @@ pip install -r requirements.txt
 1. **`taxi_2020_test_converted_1000.csv`** - Example dataset used for testing predictions.
 2. **`pred.py`** - Script to make predictions using a pre-trained binary classification model.
 3. **`best_model_with_tip.pkl`** - The saved classification model.
-4. **`pyCaret_test.ipynb`** - Jupyter Notebook demonstrating model training using PyCaret.
+4. **`pyCaret_test_binary.ipynb`** - Jupyter Notebook demonstrating model training using PyCaret.
 
 ---
 
-## Using the Jupyter Notebook (`pyCaret_test.ipynb`)
+## Using the Jupyter Notebook (`pyCaret_test_binary.ipynb`)
 
 ### Step-by-Step Guide
 
