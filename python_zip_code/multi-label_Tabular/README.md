@@ -1,6 +1,6 @@
-# Multi-Label Classification Model Package
+# Multi-class Classification Model Package
 
-This repository provides a multi-label classification model trained using Scikit-learn(1.5.2). It includes scripts for data preparation, model training, and making predictions.
+This repository provides a **multi-class classification model** trained using Keras. It includes scripts for running predictions, testing, and a deployment-ready package.
 
 ---
 
@@ -16,31 +16,11 @@ pip install -r requirements.txt
 
 ## Files in the Repository
 
-1. **`classes.txt`** - A text file mapping class indices to their labels.
-2. **`test_label_idx.csv`** - Example dataset with ground truth labels for testing predictions.
-3. **`pred.py`** - Script to make predictions using a pre-trained multi-label classification model.
-4. **`multi_label_pipeline_model.joblib`** - The saved multi-label classification model pipeline.
-5. **`Scikit-learn_multilabel.ipynb`** - Jupyter Notebook demonstrating model training and evaluation.
-6. **`multilabel_model_package.zip`** - Deployment-ready package containing the model and scripts.
-
----
-
-## Using the Jupyter Notebook (`Scikit-learn_multilabel.ipynb`)
-
-### Step-by-Step Guide
-
-1. **Load the Dataset**:
-   - The notebook demonstrates loading and processing a dataset suitable for multi-label classification.
-
-2. **Model Training**:
-   - The model is built using Scikit-learn's `Pipeline` with preprocessing steps and a classifier (e.g., Random Forest or Support Vector Classifier).
-   - Metrics such as `hamming_loss`, `precision`, and `recall` are used to evaluate model performance.
-
-3. **Save the Model**:
-   - The trained model pipeline is saved as `multi_label_pipeline_model.joblib` using `joblib.dump`.
-
-4. **Visualize Results**:
-   - The notebook generates classification reports and visualizes performance metrics.
+1. **`EfficientNetB0_keras_saved_model.keras`** - The saved multi-class classification model.
+2. **`pred.py`** - Script to make predictions using the pre-trained multi-class model.
+3. **`keras_test_image_multiclass.ipynb`** - Jupyter Notebook demonstrating model inference and testing.
+4. **`multiclass_model_package_image.zip`** - A ZIP file containing the deployment-ready model and scripts.
+5. **`requirements.txt`** - List of required dependencies.
 
 ---
 
@@ -48,24 +28,63 @@ pip install -r requirements.txt
 
 ### How `pred.py` Works
 
-1. **Load Model**:
-   - The script expects a model file named `multi_label_pipeline_model.joblib` in the same directory.
-   - The model is loaded using `joblib.load`.
+1. **Load the Model**:
+   - The script loads the pre-trained `EfficientNetB0_keras_saved_model.keras` using Keras.
 
-2. **Prepare Data**:
-   - Input data must be a `pandas.DataFrame` with the same structure as the training data.
+2. **Prepare Input Image**:
+   - Input images are resized to 224x224 and normalized to match the model's requirements.
 
 3. **Make Predictions**:
-   - The `predict` function outputs binary labels for each class.
+   - The script outputs the predicted class label and confidence score for the input image.
+
+#### Example Usage:
+
+```bash
+python pred.py --image_path /path/to/image.jpg
+```
+
+Replace `/path/to/image.jpg` with the path to your input image.
+
+---
+
+## Using the Jupyter Notebook
+
+### How `keras_test_image_multiclass.ipynb` Works
+
+1. **Load the Pre-trained Model**:
+   - The notebook demonstrates loading the `EfficientNetB0_keras_saved_model.keras` model.
+2. **Perform Inference**:
+   - The notebook runs predictions on sample images and outputs the class labels and confidence scores.
+
+3. **Showing Results**:
+   - Outputs predictions results for better understanding.
+
+---
+
+## Model Details
+
+- **Model Architecture**: EfficientNetB0
+- **Framework**: Keras
+- **Task**: Multi-class Image Classification
+
+---
+
+## Notes
+
+- Ensure the model file `EfficientNetB0_keras_saved_model.keras` is in the same directory as `pred.py`.
+- Install all dependencies listed in `requirements.txt` before running any script.
 
 ---
 
 ## Error Handling
 
 1. **Missing Model File**:
-   - Raises a `FileNotFoundError` if the model file is not found.
+   - Raises a `FileNotFoundError` if `EfficientNetB0_keras_saved_model.keras` is not found.
 
-2. **Invalid Input**:
-   - Raises a `ValueError` if the input is not a `pandas.DataFrame`.
+2. **Invalid Image Path**:
+   - Displays an error message if the specified image file does not exist.
+
+3. **Input Size Mismatch**:
+   - Automatically resizes input images to 224x224 for compatibility with the model.
 
 ---

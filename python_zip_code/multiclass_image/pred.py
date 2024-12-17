@@ -8,10 +8,6 @@ MODEL_PATH = Path(__file__).absolute().parent / "EfficientNetB0_keras_saved_mode
 # モデルのロード
 model = load_model(MODEL_PATH)
 
-# 入力画像サイズとクラス数設定
-input_image_size = (256, 256)
-n_classes = 10
-
 def predict(image: np.ndarray) -> np.ndarray:
     """
     Returns the prediction for a single image as a numpy array.
