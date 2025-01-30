@@ -1,0 +1,29 @@
+query,user_id
+I want to return my headphones.,00000
+Give me back my money for the headphones.,00000
+The headphones don't work. Can I return them?,00000
+I tried the headphones and I don't like them. Can I return them?,00000
+My last order didn't arrive. Can I get a refund?,00000
+I never got my order. Can I get a refund?,00000
+"I ordered a USB-C cable, but I got a lightning cable.",00000
+I want to return both items in my last order.,00000
+I want to return my order from ID P002.,00000
+I ordered an iPhone that cost $1500 but it was defective. Please refund me.,00000
+Did my refund get processed yet?,00001
+What's the status of my refund?,00001
+When will my refund be processed?,00001
+I never got my refund. What's going on?,00001
+I want to return my order from ID O002.,00001
+My charger doesn't work. Can I get a refund?,00001
+I want to return my iPhone.,00002
+I ordered an iPhone that cost $1500 but it was defective. Please refund me.,00002
+My iPhone arrived today and it's the wrong color. Can I return it?,00002
+I want to swap my iPhone for a different color.,00002
+"If I can't return it, can I get a different color?",00002
+I ordered an iPhone two days ago and it arrived today. It's totally scratched up. Please give me a refund.,00002
+I purchased headphones yesterday but they don't work.,00003
+Can I send me some headphones,00003
+I paid for some headphones but I never got them. Can I get them now?,00003
+Why haven't I received my headphones?,00003
+I need help with my order.,00003
+Can you help me with my homework? I want to know what the derivative of sin(cos(x)) is.,00003
