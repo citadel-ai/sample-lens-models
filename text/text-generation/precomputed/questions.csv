@@ -1,0 +1,34 @@
+query,user_id,user_location,user_device_type,user_request_type
+I want to return my headphones.,00000,USA,Mobile,Refund Request
+Give me back my money for the headphones.,00000,USA,Mobile,Refund Request
+I never got my refund. What's going on?,00001,USA,Desktop,Refund Status Inquiry
+I want to return my iPhone.,00002,UK,Desktop,Refund Request
+My iPhone arrived today and it's the wrong color. Can I return it?,00002,UK,Desktop,Refund Request
+I want to swap my iPhone for a different color.,00002,UK,Desktop,Refund Request
+"If I can't return it, can I get a different color?",00002,UK,Desktop,Refund Request
+"Hey, just checking - has my refund for the Smart Watch been processed? Order O005",00003,USA,Desktop,Refund Status Inquiry
+The Bluetooth speaker I got keeps cutting out. Can I return it?,00004,UK,Desktop,Refund Request
+This gaming keyboard is terrible - the keys are super loud and not what I expected. I want my money back!,00005,UK,Mobile,Refund Request
+I submitted a refund request for my broken laptop stand 2 days ago - what's taking so long?? Need an update ASAP,00006,UK,Mobile,Refund Status Inquiry
+Can I get my money back for that thing I bought last month?,00007,UK,Mobile,Refund Request
+"My new iPad Pro screen keeps flickering, it's unusable. I paid almost $900 for this!",00008,USA,Mobile,Refund Request
+The mechanical keyboard I bought is WAY too loud. My coworkers are complaining. Can I return it?,00009,USA,Mobile,Refund Request
+These don't work right. Need refund.,00010,Japan,Mobile,Refund Request
+Why was my SSD refund denied?! I tried every port and it still doesn't work. This is ridiculous,00011,USA,Desktop,Refund Status Inquiry
+hi something is wrong with my order,00012,USA,Desktop,Refund Request
+"Hi, I submitted a refund request for my gaming headset two days ago. Could you tell me when I might hear back?",00013,USA,Desktop,Refund Status Inquiry
+I want my money back!!,00014,Japan,Desktop,Refund Request
+The monitor I received has dead pixels. I'd like to request a refund.,00015,Japan,Desktop,Refund Request
+Just got this wireless keyboard and half the keys are sticking. Need a refund asap,00016,USA,Mobile,Refund Request
+The quality isn't what I expected. Refund?,00017,USA,Mobile,Refund Request
+My order from last week isn't working properly,00018,Japan,Mobile,Refund Request
+This power bank is completely useless - doesn't hold a charge at all. Refund please?,00019,Japan,Mobile,Refund Request
+The screen protector arrived cracked. Can I get my money back?,00020,USA,Mobile,Refund Request
+I bought something from you guys recently and it's not good,00021,USA,Mobile,Refund Request
+I just got my camera lens and it has scratches all over it. I want to return it.,00022,USA,Desktop,Refund Request
+I purchased headphones yesterday but they don't work.,00023,USA,Desktop,Invalid Request
+Can I send me some headphones,00023,USA,Desktop,Invalid Request
+I paid for some headphones but I never got them. Can I get them now?,00023,USA,Desktop,Invalid Request
+Why haven't I received my headphones?,00023,USA,Desktop,Invalid Request
+I need help with my order.,00023,USA,Desktop,Invalid Request
+Can you help me with my homework? I want to know what the derivative of sin(cos(x)) is.,00023,USA,Desktop,Invalid Request
